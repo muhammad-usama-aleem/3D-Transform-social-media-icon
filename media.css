@@ -1,0 +1,107 @@
+html
+{
+	height: 100%;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url('back6b.jpg');
+	background-size: cover;
+	height: 100%;
+	color: #111;/*
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;*/
+}
+.container
+{
+	width: 60px;
+	perspective: 1000px;
+	border-radius: 10px;
+}
+.cube
+{
+	margin: auto;
+	position: relative;
+	width: 0px;
+	height: 0px;
+	cursor: pointer;
+	transform-style: preserve-3d;
+	transition: transform 2s ease;
+}
+.cube:hover
+{
+	transform: rotateX(180deg) rotateY(720deg) translateY(-40px);
+}
+.side
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 50%;
+}
+.side.back
+{
+	transform: translateZ(-20px) rotateX(180deg);
+}
+.side.left
+{
+	transform: translateX(-20px) rotateY(-90deg);
+}
+.side.right
+{
+	transform: translateX(-20px) rotateY(90deg);
+}
+.side.front
+{
+	transform: translateZ(20px);
+}
+.side.top
+{
+	transform: translateY(-20px) rotateX(90deg);
+}
+.side.bottom 
+{
+	transform: translateY(20px) rotateX(90deg);
+}
+.side.front
+{
+	background-color: rgba(0, 0, 0, 0);
+}
+.icon
+{
+	margin: 20% auto;
+	vertical-align: middle;
+	font-size: 84px;
+}
+.side.black
+{
+	color: #777;
+	background-color: #0b1a40;
+}
+.side.facebook
+{
+	color: #fff;
+	background-color: #3b5998;
+}
+.side.twitter
+{
+	color: #fff;
+	background-color: #0084b4;
+}
+
+.pos
+{
+    position: fixed;
+    bottom: 10%;
+    right: 100px;
+}
+.pos2
+{
+    position: fixed;
+    bottom: 10%;
+    right: 150px;
+}
